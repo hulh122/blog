@@ -1,0 +1,6 @@
+## idea 相关
+.idea
+
+## build 产物
+dist
+node_modules
