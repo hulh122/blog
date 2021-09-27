@@ -56,7 +56,12 @@ module.exports = {
                 },
                 {
                     title: '2021',
-                    children: []
+                    children: [
+                        {
+                            title: '对猿辅导的一些想法',
+                            path: '/life/2021/09/对猿辅导的一些想法'
+                        }
+                    ]
                 }
             ],
             '/food/': [
