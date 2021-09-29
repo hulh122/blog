@@ -20,8 +20,8 @@ module.exports = {
                 link: '/life/'
             },
             {
-                text: '美食',
-                link: '/food/'
+                text: 'Poker',
+                link: '/poker/'
             },
             {
                 text: 'GitHub',
@@ -64,15 +64,20 @@ module.exports = {
                     ]
                 }
             ],
-            '/food/': [
+            '/poker/': [
                 {
                     title: '介绍',
-                    path: '/food/',
+                    path: '/poker/',
                     collapsable: false,
                 },
                 {
                     title: '2021',
-                    children: []
+                    children: [
+                        {
+                            title: '一些有趣的手牌分析',
+                            path: '/poker/2021/09/一些有趣的手牌分析'
+                        }
+                    ]
                 }
             ]
         }
