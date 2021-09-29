@@ -1,12 +1,17 @@
 module.exports = {
     // 页头
-    title: 'Andy\'s Blog',
+    title: '胡凌寒的博客',
     // meta 描述
-    description: '胡凌寒 Andy 的博客',
+    description: '胡凌寒的博客',
     // base 路径，基于 gitHubPage: .io/blog/ 二级目录
     base: '/blog/',
+    // 标签
+    head: [
+        ['link', {rel: 'shortcut icon', href: '/logo.png'}]
+    ],
     // 导航栏配置
     themeConfig: {
+        logo: '/logo.png',
         // 更新时间配置
         lastUpdated: '发表于',
         // 菜单配置
