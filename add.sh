@@ -5,6 +5,6 @@ git commit -m "ADD: blog"
 
 git push origin master
 
-sleep 1000
+sleep 1
 
 sh deploy.sh
