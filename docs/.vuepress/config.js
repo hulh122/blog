@@ -43,13 +43,13 @@ module.exports = {
                     collapsable: false,
                 },
                 {
-                    title: '2021',
-                    path: '/tech/2021/09/one',
+                    title: '面试',
+                    path: '/tech/面试/大纲',
                     children: [
                         {
-                            title: 'one',
-                            path: '/tech/2021/09/one'
-                        },
+                            title: '大纲',
+                            path: '/tech/面试/大纲'
+                        }
                     ]
                 }
             ],
