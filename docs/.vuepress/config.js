@@ -44,7 +44,6 @@ module.exports = {
                 },
                 {
                     title: '面试',
-                    path: '/tech/面试/大纲',
                     children: [
                         {
                             title: '大纲',
