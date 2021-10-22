@@ -48,6 +48,25 @@ module.exports = {
                         {
                             title: '大纲',
                             path: '/tech/面试/大纲'
+                        },
+                        {
+                            title: 'Javascript 基础',
+                            path: '/tech/面试/Javascript 基础/数据结构',
+                            children: [
+                                {
+                                    title: '数据结构',
+                                    path: '/tech/面试/Javascript 基础/数据结构'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: '技术随笔',
+                    children: [
+                        {
+                            title: 'Javascript 中的安全整数',
+                            path: '/tech/2021/10/Javascript 中的安全整数'
                         }
                     ]
                 }
