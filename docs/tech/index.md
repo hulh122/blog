@@ -1,1 +1,7 @@
-# 技术
+---
+path: '/tech/'
+prev: false
+next: false
+---
+
+<FeedLayout />

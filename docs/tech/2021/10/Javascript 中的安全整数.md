@@ -2,6 +2,8 @@
 title: Javascript 中的安全整数
 permalink: /tech/:year/:month/:day/:slug.html
 date: 2021-10-22
+desc: 在 Server 端面向前端的接口中，一般 id 的类型都会用 String 来替代 Number，原因是 Javacript 中 Number 最多能精确表示 2^53 - 1，而超长的 id 可能会导致重大问题。那么不禁想问，为什么一定是这个值呢？
+imgName: 1
 ---
 
 # {{$frontmatter.title}}

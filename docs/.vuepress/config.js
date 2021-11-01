@@ -13,7 +13,7 @@ module.exports = {
     themeConfig: {
         logo: '/logo.png',
         // 更新时间配置
-        lastUpdated: '发表于',
+        lastUpdated: '最后更新',
         // 菜单配置
         nav: [
             {
@@ -38,7 +38,7 @@ module.exports = {
         sidebar: {
             '/tech/': [
                 {
-                    title: '介绍',
+                    title: '近期更新',
                     path: '/tech/',
                     collapsable: false,
                 },
@@ -73,7 +73,7 @@ module.exports = {
             ],
             '/life/': [
                 {
-                    title: '介绍',
+                    title: '近期更新',
                     path: '/life/',
                     collapsable: false,
                 },
@@ -89,7 +89,7 @@ module.exports = {
             ],
             '/poker/': [
                 {
-                    title: '介绍',
+                    title: '近期更新',
                     path: '/poker/',
                     collapsable: false,
                 },
@@ -104,5 +104,15 @@ module.exports = {
                 }
             ]
         }
-    }
+    },
+    plugins: [
+        [
+            '@vuepress/blog',
+            {
+                siteMap: {
+                    hostname: 'https://hulh122.github.io'
+                },
+            }
+        ]
+    ]
 }
