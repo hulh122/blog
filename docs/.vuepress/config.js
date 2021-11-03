@@ -64,6 +64,10 @@ module.exports = {
                                 {
                                     title: 'instanceof',
                                     path: '/tech/面试/Javascript 基础/instanceof'
+                                },
+                                {
+                                    title: 'new 一个对象的过程',
+                                    path: '/tech/面试/Javascript 基础/new 一个对象的过程'
                                 }
                             ]
                         }
