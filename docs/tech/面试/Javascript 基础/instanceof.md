@@ -6,7 +6,7 @@ desc: instanceof 是面试中常考的 Javascript 关键字，面试官常用它
 imgName: 6
 ---
 
-# {{$frontmatter.title}}
+<Title />
 
 ### 简介
 `instanceof` 是面试中常考的 Javascript 关键字，面试官常用它来考察面试者对`原型链`的基础掌握，我们来通过面试题掌握这个知识点。

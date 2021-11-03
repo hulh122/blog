@@ -6,7 +6,7 @@ desc: 在 Server 端面向前端的接口中，一般 id 的类型都会用 Stri
 imgName: 1
 ---
 
-# {{$frontmatter.title}}
+<Title />
 
 ### 简介
 在 Server 端面向前端的接口中，一般 id 的类型都会用 `String` 来替代 `Number`，原因是 Javacript 中 `Number` 最多能精确表示 2^53 - 1，而超长的 id 可能会导致重大问题。  
