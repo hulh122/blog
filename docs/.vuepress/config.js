@@ -56,6 +56,14 @@ module.exports = {
                                 {
                                     title: '数据结构',
                                     path: '/tech/面试/Javascript 基础/数据结构'
+                                },
+                                {
+                                    title: '原型链',
+                                    path: '/tech/面试/Javascript 基础/原型链'
+                                },
+                                {
+                                    title: 'instanceof',
+                                    path: '/tech/面试/Javascript 基础/instanceof'
                                 }
                             ]
                         }

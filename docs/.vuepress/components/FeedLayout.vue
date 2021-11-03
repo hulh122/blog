@@ -33,10 +33,10 @@ export default {
       const blogs = this.$site.pages
           .filter(({path}) => path.includes(legalPath) && path !== legalPath)
           .sort((a, b) => {
-            const prevDate = new Date(a.frontmatter.date).getDate();
-            const nextDate = new Date(b.frontmatter.date).getDate();
+            const prevDate = new Date(a.frontmatter.date).getTime();
+            const nextDate = new Date(b.frontmatter.date).getTime();
             if (prevDate !== nextDate) {
-              return prevDate - nextDate;
+              return nextDate - prevDate;
             } else {
               return a.title > b.title ? 1 : -1;
             }
