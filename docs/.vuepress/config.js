@@ -68,6 +68,10 @@ module.exports = {
                                 {
                                     title: 'new 一个对象的过程',
                                     path: '/tech/面试/Javascript 基础/new 一个对象的过程'
+                                },
+                                {
+                                    title: 'Object.create 详解',
+                                    path: '/tech/面试/Javascript 基础/Object.create 详解'
                                 }
                             ]
                         }
