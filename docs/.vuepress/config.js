@@ -86,7 +86,7 @@ module.exports = {
                     children: [
                         {
                             title: 'Javascript 中的安全整数',
-                            path: '/tech/2021/10/Javascript 中的安全整数'
+                            path: '/tech/2021/Javascript 中的安全整数'
                         }
                     ]
                 }
@@ -102,7 +102,7 @@ module.exports = {
                     children: [
                         {
                             title: '对猿辅导的一些想法',
-                            path: '/life/2021/09/对猿辅导的一些想法'
+                            path: '/life/2021/对猿辅导的一些想法'
                         }
                     ]
                 }
@@ -118,7 +118,7 @@ module.exports = {
                     children: [
                         {
                             title: '一些有趣的手牌分析',
-                            path: '/poker/2021/09/一些有趣的手牌分析'
+                            path: '/poker/2021/一些有趣的手牌分析'
                         }
                     ]
                 }
