@@ -72,6 +72,10 @@ module.exports = {
                                 {
                                     title: 'Object.create 详解',
                                     path: '/tech/面试/Javascript 基础/Object.create 详解'
+                                },
+                                {
+                                    title: 'typeof',
+                                    path: '/tech/面试/Javascript 基础/typeof'
                                 }
                             ]
                         }
