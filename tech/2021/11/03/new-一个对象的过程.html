@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>new 一个对象的过程 | 胡凌寒的博客</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="shortcut icon" href="/blog/logo.png">
+    <meta name="description" content="胡凌寒的博客">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.5e936627.css" as="style"><link rel="preload" href="/blog/assets/js/app.1111d6a6.js" as="script"><link rel="preload" href="/blog/assets/js/2.b64cf9fa.js" as="script"><link rel="preload" href="/blog/assets/js/18.30009fa5.js" as="script"><link rel="preload" href="/blog/assets/js/4.56188d28.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.c693d1dd.js"><link rel="prefetch" href="/blog/assets/js/11.f97f06c8.js"><link rel="prefetch" href="/blog/assets/js/12.98ca87fb.js"><link rel="prefetch" href="/blog/assets/js/13.457922e0.js"><link rel="prefetch" href="/blog/assets/js/14.b43ab1ba.js"><link rel="prefetch" href="/blog/assets/js/15.1610d704.js"><link rel="prefetch" href="/blog/assets/js/16.0b32d83f.js"><link rel="prefetch" href="/blog/assets/js/17.3f798181.js"><link rel="prefetch" href="/blog/assets/js/19.03c14a98.js"><link rel="prefetch" href="/blog/assets/js/20.282fb625.js"><link rel="prefetch" href="/blog/assets/js/21.0fd53da1.js"><link rel="prefetch" href="/blog/assets/js/22.fc679e58.js"><link rel="prefetch" href="/blog/assets/js/3.a628d6e8.js"><link rel="prefetch" href="/blog/assets/js/5.748c7639.js"><link rel="prefetch" href="/blog/assets/js/6.694033c2.js"><link rel="prefetch" href="/blog/assets/js/7.92dce383.js"><link rel="prefetch" href="/blog/assets/js/8.4d09dfde.js"><link rel="prefetch" href="/blog/assets/js/9.c0aee2df.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.5e936627.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/logo.png" alt="胡凌寒的博客" class="logo"> <span class="site-name can-hide">胡凌寒的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/tech/" class="nav-link router-link-active">
+  技术
+</a></div><div class="nav-item"><a href="/blog/life/" class="nav-link">
+  生活
+</a></div><div class="nav-item"><a href="/blog/poker/" class="nav-link">
+  Poker
+</a></div><div class="nav-item"><a href="https://github.com/hulh122" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/tech/" class="nav-link router-link-active">
+  技术
+</a></div><div class="nav-item"><a href="/blog/life/" class="nav-link">
+  生活
+</a></div><div class="nav-item"><a href="/blog/poker/" class="nav-link">
+  Poker
+</a></div><div class="nav-item"><a href="https://github.com/hulh122" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/tech/" aria-current="page" class="sidebar-link">近期更新</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>面试</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/tech/2021/09/28/大纲.html" class="sidebar-link">大纲</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/blog/tech/面试/Javascript 基础/数据结构" class="sidebar-heading clickable open"><span>Javascript 基础</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/tech/2021/10/22/数据结构.html" class="sidebar-link">数据结构</a></li><li><a href="/blog/tech/2021/11/02/原型链.html" class="sidebar-link">原型链</a></li><li><a href="/blog/tech/2021/11/03/instanceof.html" class="sidebar-link">instanceof</a></li><li><a href="/blog/tech/2021/11/03/new-一个对象的过程.html" class="active sidebar-link">new 一个对象的过程</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/tech/2021/11/05/object-create-详解.html" class="sidebar-link">Object.create 详解</a></li><li><a href="/blog/tech/2021/11/15/typeof.html" class="sidebar-link">typeof</a></li></ul></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>技术随笔</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><div data-v-30ff1c6a><h1 data-v-30ff1c6a>new 一个对象的过程</h1> <div data-v-30ff1c6a><span class="date" data-v-30ff1c6a>2021-11-3</span></div> <div class="line" data-v-30ff1c6a></div></div> <h3 id="简介"><a href="#简介" class="header-anchor">#</a> 简介</h3> <p><code>new</code> 是实现构造函数继承生成对象的关键字，在面试中用于考察候选人对于构造函数继承的理解。</p> <h3 id="一道面试题"><a href="#一道面试题" class="header-anchor">#</a> 一道面试题</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 实现 new 关键字</span>
+
+<span class="token keyword">function</span> <span class="token function">newSolution</span><span class="token punctuation">(</span><span class="token parameter">constructor<span class="token operator">:</span> Function<span class="token punctuation">,</span> <span class="token operator">...</span>args<span class="token operator">:</span> any</span><span class="token punctuation">)</span><span class="token operator">:</span> Object <span class="token punctuation">{</span>
+    <span class="token comment">// 原型关系继承</span>
+    <span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    obj<span class="token punctuation">.</span>__proto__ <span class="token operator">=</span> constructor<span class="token punctuation">.</span>prototype<span class="token punctuation">;</span>
+    <span class="token comment">// 也可采用下面的方式 👇</span>
+    <span class="token keyword">const</span> obj <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span>constructor<span class="token punctuation">.</span>prototype<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 替换 this 指向并执行构造函数</span>
+    <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token function">constructor</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token operator">...</span>args<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 注意：一般来说构造函数的是不能有返回值的，但如果有，根据 new 的官方标准，返回值如果是对象或者是函数，则直接将变量指向返回值</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>res <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> res <span class="token operator">===</span> <span class="token string">'function'</span> <span class="token operator">||</span> <span class="token keyword">typeof</span> res <span class="token operator">===</span> <span class="token string">'object'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">?</span> res <span class="token operator">:</span> obj<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">Parent</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">name<span class="token operator">:</span> string<span class="token punctuation">,</span> age<span class="token operator">:</span> number</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> age<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> child <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Parent</span><span class="token punctuation">(</span><span class="token string">'jack'</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> child2 <span class="token operator">=</span> <span class="token function">newSolution</span><span class="token punctuation">(</span>Parent<span class="token punctuation">,</span> <span class="token string">'jack'</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+child<span class="token punctuation">;</span> <span class="token comment">// Parent {name: 'jack', age: 18}</span>
+child2<span class="token punctuation">;</span> <span class="token comment">// Parent {name: 'jack', age: 18}</span>
+child<span class="token punctuation">.</span>__proto__ <span class="token operator">===</span> <span class="token class-name">Parent</span><span class="token punctuation">.</span>prototype<span class="token punctuation">;</span> <span class="token comment">// true</span>
+child2<span class="token punctuation">.</span>__proto__ <span class="token operator">===</span> <span class="token class-name">Parent</span><span class="token punctuation">.</span>prototype<span class="token punctuation">;</span> <span class="token comment">// true</span>
+</code></pre></div><h3 id="解析"><a href="#解析" class="header-anchor">#</a> 解析</h3> <p>实现构造函数继承其实就是<code>原型链</code>的指针改变，在访问一个对象属性的时候，会沿着<code>原型链</code>向上寻找，
+将对象的 <code>__proto__</code> 指向目标构造函数的原型对象，通过 <code>apply</code> 更改 this 指向获取函数参数即可。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">11/19/2021, 3:08:53 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/tech/2021/11/03/instanceof.html" class="prev">
+        instanceof
+      </a></span> <span class="next"><a href="/blog/tech/2021/11/05/object-create-详解.html">
+        Object.create 详解
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.1111d6a6.js" defer></script><script src="/blog/assets/js/2.b64cf9fa.js" defer></script><script src="/blog/assets/js/18.30009fa5.js" defer></script><script src="/blog/assets/js/4.56188d28.js" defer></script>
+  </body>
+</html>
