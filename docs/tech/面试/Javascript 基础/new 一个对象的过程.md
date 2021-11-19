@@ -21,9 +21,10 @@ function newSolution(constructor: Function, ...args: any): Object {
     obj.__proto__ = constructor.prototype;
     // 也可采用下面的方式 👇
     const obj = Object.create(constructor.prototype);
-    // 替换 this 指向
-    constructor.apply(obj, [...args]);
-    return obj;
+    // 替换 this 指向并执行构造函数
+    const res = constructor.apply(obj, [...args]);
+    // 注意：一般来说构造函数的是不能有返回值的，但如果有，根据 new 的官方标准，返回值如果是对象或者是函数，则直接将变量指向返回值
+    return (res && (typeof res === 'function' || typeof res === 'object')) ? res : obj;
 }
 
 const Parent = function (name: string, age: number): void {
