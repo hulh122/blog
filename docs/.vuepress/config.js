@@ -18,10 +18,10 @@ module.exports = {
                 text: '技术',
                 link: '/tech/'
             },
-            {
-                text: '生活',
-                link: '/life/'
-            },
+            // {
+            //     text: '生活',
+            //     link: '/life/'
+            // },
             {
                 text: 'Poker',
                 link: '/poker/'
