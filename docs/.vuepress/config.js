@@ -3,8 +3,6 @@ module.exports = {
     title: '胡凌寒的博客',
     // meta 描述
     description: '胡凌寒的博客',
-    // base 路径，基于 gitHubPage: .io/blog/ 二级目录
-    base: '/blog/',
     // 标签
     head: [
         ['link', {rel: 'shortcut icon', href: '/logo.png'}]
