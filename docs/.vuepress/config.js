@@ -41,39 +41,39 @@ module.exports = {
                     collapsable: false,
                 },
                 {
-                    title: '面试',
+                    title: '前端基础',
                     children: [
                         {
                             title: '大纲',
-                            path: '/tech/面试/大纲'
+                            path: '/tech/前端基础/大纲'
                         },
                         {
                             title: 'Javascript 基础',
-                            path: '/tech/面试/Javascript 基础/数据结构',
+                            path: '/tech/前端基础/Javascript 基础/数据结构',
                             children: [
                                 {
                                     title: '数据结构',
-                                    path: '/tech/面试/Javascript 基础/数据结构'
+                                    path: '/tech/前端基础/Javascript 基础/数据结构'
                                 },
                                 {
                                     title: '原型链',
-                                    path: '/tech/面试/Javascript 基础/原型链'
+                                    path: '/tech/前端基础/Javascript 基础/原型链'
                                 },
                                 {
                                     title: 'instanceof',
-                                    path: '/tech/面试/Javascript 基础/instanceof'
+                                    path: '/tech/前端基础/Javascript 基础/instanceof'
                                 },
                                 {
                                     title: 'new 一个对象的过程',
-                                    path: '/tech/面试/Javascript 基础/new 一个对象的过程'
+                                    path: '/tech/前端基础/Javascript 基础/new 一个对象的过程'
                                 },
                                 {
                                     title: 'Object.create 详解',
-                                    path: '/tech/面试/Javascript 基础/Object.create 详解'
+                                    path: '/tech/前端基础/Javascript 基础/Object.create 详解'
                                 },
                                 {
                                     title: 'typeof',
-                                    path: '/tech/面试/Javascript 基础/typeof'
+                                    path: '/tech/前端基础/Javascript 基础/typeof'
                                 }
                             ]
                         }
