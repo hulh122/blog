@@ -85,6 +85,10 @@ module.exports = {
                         {
                             title: 'Javascript 中的安全整数',
                             path: '/tech/2021/Javascript 中的安全整数'
+                        },
+                        {
+                            title: '包管理工具',
+                            path: '/tech/2021/包管理工具'
                         }
                     ]
                 }
