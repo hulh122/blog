@@ -74,6 +74,14 @@ module.exports = {
                                 {
                                     title: 'typeof',
                                     path: '/tech/前端基础/Javascript 基础/typeof'
+                                },
+                                {
+                                    title: '作用域',
+                                    path: '/tech/前端基础/Javascript 基础/作用域'
+                                },
+                                {
+                                    title: '聊聊变量提升',
+                                    path: '/tech/前端基础/Javascript 基础/聊聊变量提升'
                                 }
                             ]
                         }
