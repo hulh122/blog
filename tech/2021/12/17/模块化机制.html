@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>模块化机制 | 胡凌寒的博客</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="shortcut icon" href="/logo.png">
+    <meta name="description" content="胡凌寒的博客">
+    
+    <link rel="preload" href="/assets/css/0.styles.9072d254.css" as="style"><link rel="preload" href="/assets/js/app.f8f16f2d.js" as="script"><link rel="preload" href="/assets/js/2.09bec7b4.js" as="script"><link rel="preload" href="/assets/js/26.4865527e.js" as="script"><link rel="preload" href="/assets/js/5.5770d156.js" as="script"><link rel="prefetch" href="/assets/js/10.fd01ab7b.js"><link rel="prefetch" href="/assets/js/11.5431579c.js"><link rel="prefetch" href="/assets/js/12.54d6f764.js"><link rel="prefetch" href="/assets/js/13.bf19fb9b.js"><link rel="prefetch" href="/assets/js/14.e0fc7fbc.js"><link rel="prefetch" href="/assets/js/15.d99282fa.js"><link rel="prefetch" href="/assets/js/16.c3d36afb.js"><link rel="prefetch" href="/assets/js/17.a5b2b149.js"><link rel="prefetch" href="/assets/js/18.9dfd4683.js"><link rel="prefetch" href="/assets/js/19.62ea1b98.js"><link rel="prefetch" href="/assets/js/20.bbe4402b.js"><link rel="prefetch" href="/assets/js/21.26bec447.js"><link rel="prefetch" href="/assets/js/22.53dd06f2.js"><link rel="prefetch" href="/assets/js/23.57ca6101.js"><link rel="prefetch" href="/assets/js/24.cad6d5bf.js"><link rel="prefetch" href="/assets/js/25.e5e5fed5.js"><link rel="prefetch" href="/assets/js/27.9b3005fe.js"><link rel="prefetch" href="/assets/js/28.a3aa7b6c.js"><link rel="prefetch" href="/assets/js/3.a89ce857.js"><link rel="prefetch" href="/assets/js/4.10992d6b.js"><link rel="prefetch" href="/assets/js/6.3c2136ba.js"><link rel="prefetch" href="/assets/js/7.b390c295.js"><link rel="prefetch" href="/assets/js/8.2ff4cdfe.js"><link rel="prefetch" href="/assets/js/9.0982672c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9072d254.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="胡凌寒的博客" class="logo"> <span class="site-name can-hide">胡凌寒的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/tech/" class="nav-link router-link-active">
+  技术
+</a></div><div class="nav-item"><a href="/life/" class="nav-link">
+  生活
+</a></div><div class="nav-item"><a href="/poker/" class="nav-link">
+  Poker
+</a></div><div class="nav-item"><a href="https://github.com/hulh122" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/tech/" class="nav-link router-link-active">
+  技术
+</a></div><div class="nav-item"><a href="/life/" class="nav-link">
+  生活
+</a></div><div class="nav-item"><a href="/poker/" class="nav-link">
+  Poker
+</a></div><div class="nav-item"><a href="https://github.com/hulh122" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/tech/" aria-current="page" class="sidebar-link">近期更新</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>前端基础</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tech/2021/09/28/大纲.html" class="sidebar-link">大纲</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/tech/前端基础/Javascript 基础/数据结构" class="sidebar-heading clickable open"><span>Javascript 基础</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/tech/2021/10/22/数据结构.html" class="sidebar-link">数据结构</a></li><li><a href="/tech/2021/11/02/原型链.html" class="sidebar-link">原型链</a></li><li><a href="/tech/2021/11/03/instanceof.html" class="sidebar-link">instanceof</a></li><li><a href="/tech/2021/11/03/new-一个对象的过程.html" class="sidebar-link">new 一个对象的过程</a></li><li><a href="/tech/2021/11/05/object-create-详解.html" class="sidebar-link">Object.create 详解</a></li><li><a href="/tech/2021/11/15/typeof.html" class="sidebar-link">typeof</a></li><li><a href="/tech/2021/12/13/作用域.html" class="sidebar-link">作用域</a></li><li><a href="/tech/2021/12/13/聊聊变量提升.html" class="sidebar-link">聊聊变量提升</a></li><li><a href="/tech/2021/12/17/模块化机制.html" class="active sidebar-link">模块化机制</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>技术随笔</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><div data-v-b1b95ada><h1 data-v-b1b95ada>模块化机制</h1> <div data-v-b1b95ada><span class="date" data-v-b1b95ada>2021-12-17</span></div> <div class="line" data-v-b1b95ada></div></div> <h3 id="简介"><a href="#简介" class="header-anchor">#</a> 简介</h3> <p>当你被问到：JS 为什么会有模块化机制？不同的模块化机制的不同点，你能好好地回答出来吗？</p> <h3 id="模块化机制出现的原因"><a href="#模块化机制出现的原因" class="header-anchor">#</a> 模块化机制出现的原因</h3> <p>JavaScript 作为一名脚本语言出现的时候，他的作者根本没有想到他会变成现在这个样子（我做的小工具变成了大家都在使用的大家伙）。
+因为没有料到这点，所以它是有非常多的<strong>瑕疵</strong>的。简单来说，在 es6 之前，官方没考虑过模块化这回事儿。没有模块化的 JS 是什么样子呢？</p> <p>我们很容易遇到变量冲突的问题 👇：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 文件 1.js</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token string">'我是文件 1'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 文件 2.js</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token string">'我是文件 2'</span><span class="token punctuation">;</span> <span class="token comment">// error, a is already defined</span>
+</code></pre></div><p>当然你可以考虑在一个文件里写全部内容，但是文件大了以后，是否能维护就是个问题了。</p> <p>于是，由于写 JS 的人越来越多，开启了模块化的洪荒时代，我们有了产物 <code>AMD</code> 和 <code>CMD</code>。</p> <h3 id="什么是-amd"><a href="#什么是-amd" class="header-anchor">#</a> 什么是 AMD?</h3> <p><code>AMD</code> 中文名称是：异步模块定义。它最早出现在 <code>require.js</code>。</p> <p>从中文名中我们就可以得知，异步模块，那必然是通过异步导入模块的。来看看它的基本语法：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">define</span><span class="token punctuation">(</span><span class="token punctuation">[</span>module<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">module</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>module<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>在 <code>define</code> 中包裹的第一个参数说明了我们所引入的模块，其后紧跟一个回调 callback，这个 callback 将在 module 被引入后执行。</p> <p>一看到 callback，想必大家立马就会意识到一个问题，<code>callback hell</code> 。回调包回调想必是跑不掉的。</p> <h3 id="什么是-cmd"><a href="#什么是-cmd" class="header-anchor">#</a> 什么是 CMD?</h3> <p><code>CMD</code> 中文名称是：通用模块定义。<code>sea.js</code> 就是遵循的这个规范。</p> <p>事实上，CMD 和上面的 AMD 非常相似，他们唯一不同的点在于引入依赖的时机，在 AMD 中，模块定义时决定了我们要依赖的模块，而 CMD 在运行过程中去引入模块。</p> <p>看看它的语法：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">define</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">reqired<span class="token punctuation">,</span> exports<span class="token punctuation">,</span> module</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 同步加载模块</span>
+   <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token function">reqired</span><span class="token punctuation">(</span><span class="token string">'./a.js'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token comment">// 异步加载模块</span>
+    reqired<span class="token punctuation">.</span><span class="token function">async</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'./b.js'</span><span class="token punctuation">,</span> <span class="token string">'./c.js'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">b<span class="token punctuation">,</span> c</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>在 <code>CMD</code> 中，同时支持了我们用异步和同步来引入模块，而且时机和 AMD 截然不同。事实上，它是结合了 AMD 和 CommonJS 共同的优点。运行时引入和异步执行的巧妙结合。</p> <p>刚才我们提到了 CommonJS，它是主要运行在 Node 的模块化机制。</p> <h3 id="什么是-commonjs"><a href="#什么是-commonjs" class="header-anchor">#</a> 什么是 CommonJS?</h3> <p>CommonJS 是运行在 Node 的模块化机制，它是一个同步引入模块的方案。怎么理解同步？</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./a.js'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><code>CommonJS</code> 通过 require 来引入模块，但在模块被完全引入前，便不会执行后续的代码。这在浏览器中显然不靠谱，在加载 JS 文件的时候，都是通过网络请求来加载的，天然就是一个异步的过程。
+如果这些网络请求都通过同步等待，我们的页面展示出来得何年何月了。</p> <p>但服务端由于文件都在本地，导入的关系就变成了文件协议，所以同步引入也不会有什么大问题。</p> <p>来看看 CommonJS 的基本语法：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token function-variable function">addCount</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    count<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    count<span class="token punctuation">,</span>
+    addCount
+<span class="token punctuation">}</span>
+</code></pre></div><p>在 CommonJS 中，通过 <code>require</code> 来导入值，通过 <code>module.exports</code> 来导出值。值的注意的一点是，通过它导入的模块都是值拷贝，在值变化后，并不会影响到源文件，
+我们拿上面的导出文件举个例子：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token punctuation">{</span>count<span class="token punctuation">,</span> addCount<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./common.js'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>count<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 0</span>
+<span class="token function">addCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>count<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 0;</span>
+</code></pre></div><p>当 count 被拷贝过来后，它就和源文件脱离了关系，自然源文件里的 count ++ 就和现文件没什么关系了。</p> <h3 id="浏览器中的正规军-esm"><a href="#浏览器中的正规军-esm" class="header-anchor">#</a> 浏览器中的正规军 ESM</h3> <p>在 es6 之后，我们的 JS 终于迎来了自己的模块化方案，es-Module。</p> <p>在它之前，CommonJS 或 CMD 都可以动态引入模块（即在运行时引入）。而 ESM 只能静态引入模块，所有的依赖都需要写在最上方：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> a <span class="token keyword">from</span> <span class="token string">'a.js'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>add<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'b.js'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 执行代码</span>
+</code></pre></div><p>这样，在编译时就能梳理好我们的引用关系。再通过 webpack 打包到一个文件后，不需要关注到模块引入的问题了。（当然现代浏览器都支持了 ESM 直接解析，Vite 和 Snowpack 都是基于 ESM 的构建工具）。</p> <p>ESM 的基本语句：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token function-variable function">addCount</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    count<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    count<span class="token punctuation">,</span>
+    addCount
+<span class="token punctuation">}</span>
+</code></pre></div><p>值的一提的是，ESM 在引入模块的时候，采用的是只读的关系映射而不是值的拷贝，于是下面代码就和之前的 CommonJS 有了很大的区别：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>count<span class="token punctuation">,</span> addCount<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./esm.js'</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>count<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 0</span>
+<span class="token function">addCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>count<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 1</span>
+count <span class="token operator">++</span><span class="token punctuation">;</span> <span class="token comment">// error</span>
+</code></pre></div><p>在引用传递后，随着 addCount 的执行，count 的原文件中的值加一的，由于引用，当前文件中的 count 也会加一。由于只读引用，改写 count 也会报错。</p> <h3 id="后记"><a href="#后记" class="header-anchor">#</a> 后记</h3> <p>从头到尾梳理一遍 JS 的模块化机制不但能让我们了解到模块化出现的原因，也能让我们了解到各个机制的不同点和优缺点。模块化之后，怎么管理依赖文件的引入又成了新的问题，
+这时我们又出现了 webpack 等打包工具。每个工具的出现都有对应的时代背景和技术需求原型。</p> <p>充分的了解到工具是什么之前，我们更应该搞懂为什么有这个工具的出现。</p> <h3 id="一些拓展"><a href="#一些拓展" class="header-anchor">#</a> 一些拓展</h3> <ul><li><a href="https://blog.csdn.net/howgod/article/details/87466148" target="_blank" rel="noopener noreferrer">前端模块化详解<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/tech/2021/12/13/聊聊变量提升.html" class="prev">
+        聊聊变量提升
+      </a></span> <span class="next"><a href="/tech/2021/10/22/javascript-中的安全整数.html">
+        Javascript 中的安全整数
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.f8f16f2d.js" defer></script><script src="/assets/js/2.09bec7b4.js" defer></script><script src="/assets/js/26.4865527e.js" defer></script><script src="/assets/js/5.5770d156.js" defer></script>
+  </body>
+</html>
