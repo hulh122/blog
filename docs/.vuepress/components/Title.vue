@@ -17,7 +17,7 @@ export default {
 
     date() {
       const date = new Date(this.$frontmatter.date);
-      return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDay()}`;
+      return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
     }
   },
 

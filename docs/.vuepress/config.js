@@ -82,6 +82,10 @@ module.exports = {
                                 {
                                     title: '聊聊变量提升',
                                     path: '/tech/前端基础/Javascript 基础/聊聊变量提升'
+                                },
+                                {
+                                    title: '模块化机制',
+                                    path: '/tech/前端基础/Javascript 基础/模块化机制'
                                 }
                             ]
                         }
